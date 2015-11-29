@@ -120,7 +120,7 @@
       <div class="arrow"></div>
       <br/><br/>
       <div class="author">
-        By <div><?php print $name; ?></div>
+        Por <div><?php print $name; ?></div>
       </div>
 
       <?php $date = getdate($created); ?>
