@@ -1,0 +1,160 @@
+.jumbotron{
+	margin: 0;
+}
+
+.search-block{
+	background: #DEDD3B url(../images/foto.jpg) no-repeat right top;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+	padding-bottom: 0;
+}
+
+.search-block .logo{
+	background: url(../images/logo.png) no-repeat;
+	text-align: left;
+	text-indent: -999em;
+	width: 232px;
+	height: 78px;
+	-webkit-background-size: contain;
+	     -o-background-size: contain;
+	        background-size: contain;
+}
+
+.search-block .quote{
+	font: 36px 'LucidaHandwriting-Italic';
+	color: #FFF;
+	line-height: 50px;
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+	text-align: center;
+	padding: 40px 0;
+}
+
+.search-block .search-box{
+	max-width: 70%;
+	position: relative;
+	background: #FCEAA9;
+	font: 18px 'OpenSans-Semibold', sans-serif;
+	line-height: 24px;
+	color: #6E7370;
+	margin: 0 auto;
+	padding: 20px 40px;
+	-webkit-border-radius: 30px 30px 0 0;
+	        border-radius: 30px 30px 0 0;
+}
+
+.search-block .search-box .row{ padding: 10px 0; }
+.search-block .search-box label{
+	text-align: left;
+}
+
+.search-block .search-box input{
+	float: right;
+}
+
+.search-block .search-box .row .lab{
+	line-height: 32px;
+	color: #6E7370;
+}
+.search-block .search-box .row .sel{
+	position: relative;
+	display: block;
+	width: 50%;
+	float: right;
+}
+.search-block .search-box .sel:after{
+	content: '▾';
+	position: absolute;
+	right: 14px;
+	font-size: 20px;
+	top: 1px;
+}
+
+.search-block .search-box select{
+	width: 100%;
+	outline: none;
+	border: 0;
+	padding: 5px 40px 5px 10px;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+	-webkit-appearance:none;
+		 -moz-appearance:none;
+					appearance:none;
+}
+
+.search-block .search-box button{
+	background-color: #72BD1F;
+	color: #FFF;
+	border: #000;
+	padding: 8px 10%;
+	display: inline-block;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+}
+
+.search-block .search-box .col-sm-6{
+	width: 49.5%;
+}
+.search-block .search-box .docente{
+	margin-left: 1%;
+}
+
+.search-block .search-box .btn{
+	font-size: 18px;
+	border: 1px solid #D8C580;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+}
+
+.fun-block{
+	background-color: #34B4E4;
+}
+
+.more-info-block{
+	background-color: #F39910;
+}
+
+
+@media (max-width:768px){
+	.search-block .logo{
+		margin: 0 auto;
+	}
+	.submit-btn{
+		padding: 0;
+	}
+	.search-block .quote{
+		font-size: 6vw;
+		padding: 20px 0;
+		line-height: 125%;
+	}
+
+	.search-block .search-box{
+		max-width: 95%;
+	}
+
+	.search-block .search-box button{
+		display: block;
+		width: 100%;
+	}
+
+	.search-block .search-box .row .lab{
+		text-align: center;
+		display: block;
+	}
+
+	.search-block .search-box .row{
+		padding: 0;
+	}
+
+	.search-block .search-box .row .sel{
+		float: none;
+		width: 100%;
+	}
+	.search-block .search-box .row .sel select{ display: block; }
+
+	.search-block .search-box .row .col-xs-12{
+		margin-bottom: 10px;
+		-webkit-border-radius: 10px;
+    border-radius: 10px;
+	}
+}

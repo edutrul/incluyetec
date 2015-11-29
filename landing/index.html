@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>IncluTec</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<div class="jumbotron search-block">
+		<div class="container">
+		  <h1 class="logo">IncluyeTec</h1>
+		  <p class="quote">Aprendiendo a enseñar</p>
+		  <form class="search-box" action="http://incluyetec.tk/" method="post">
+		  	<div class="row">
+			  	<label class="btn col-xs-12 col-sm-6">
+			  		Soy Padre
+			  		<input type="radio" checked name="profile" value="padre">
+			  	</label>
+			  	<label class="btn col-xs-12 col-sm-6 docente">
+			  		Soy Docente
+			  		<input type="radio" name="profile" value="docente">
+			  	</label>
+		  	</div>
+		  	<div class="row">
+		  		<label id="disability-btn" class="btn col-xs-12 col-sm-12">
+		  			<span class="lab">Y Quiero saber sobre</span>
+		  			<span class="sel">
+			  			<select name="disability">
+			  				<option>Elegir discapacidad</option>
+			  			</select>
+		  			</span>
+		  		</label>
+		  	</div>
+		  	<div class="row">
+			  	<div class="col-sm-12 text-center submit-btn">
+			  		<button type="submit"> Saber Más <span class="glyphicon glyphicon-chevron-right"></span></button>
+			  	</div>
+			  </div>
+		  </form>
+	  </div>
+	</div>
+	<div class="jumbotron fun-block" style="padding: 0;">
+		<a href="michi.html"><img src="images/Landing_2.png" style="width: 100%; height: auto;  margin: 0;"></a>
+	</div>
+
+	<div class="jumbotron more-info-block text-center">
+		<img src="images/Landing_3.png" usemap="#map" />
+		<map name="map">
+		    <area href="#3" shape="rect" coords="356, 322, 667, 362" />
+		    <area href="#2" shape="rect" coords="652, 126, 905, 267" />
+		    <area href="#1" shape="rect" coords="387, 129, 638, 269" />
+		    <area href="#0" shape="rect" coords="122, 126, 367, 267" />
+		</map>
+	</div>
+
+	<div class="container">
+		<p class="text-center" style="padding:10px">Hecho para la Hackathon</p>
+	</div>
+
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+		});
+	</script>
+
+</body>
+</html>

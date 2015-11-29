@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Michis</title>
+  <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="michi.js"></script>
+<style>
+  
+  .mark-x {
+    font-size: 50px;
+  }
+  .mark-o {
+    font-size: 50px;
+  }
+  
+  td {
+    width: 150px;
+    height: 150px;
+  }
+  
+  td h1 {
+     margin: 0px;
+     text-align: center;
+  }
+  div#michi-game-table {
+    position:fixed;
+    top: 20%;
+    left: 50%;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+  }
+  
+  span#turn-a {
+    color: blue;
+    text-align: center;
+  }
+  span#turn-b {
+    color: red;
+    text-align: center;
+  }
+  
+      #ball {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: red;
+        background-image: -webkit-radial-gradient(40% 40%, circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));;
+        background-image: -moz-radial-gradient(40% 40%, circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));;
+        background-image: -ms-radial-gradient(40% 40%, circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));;
+        background-image: radial-gradient(circle at 40% 40%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+        position: relative;
+      }
+
+.pressed {
+  border: 1px solid red;
+}
+</style>
+</head>
+<body>
+      <p id="gamepad-info" style="display: none">Waiting for Gamepad.</p>
+    <div id="ball" style="display: none"></div>
+    <div id="michi-game-table">
+      <h1>Juego de michi Para dos</h1>
+<a href="https://github.com/edutrul"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+      <div id="players">
+        <span id="turn-a"> Es tu turno jugador A</span>
+      </div>
+      <table border="1">
+        <tr id="row-0">
+          <td class="cel-0 cell"></td>
+          <td class="cel-1 cell"></td>
+          <td class="cel-2 cell"></td>
+        </tr>
+        <tr id="row-1">
+          <td class="cel-0 cell"></td>
+          <td class="cel-1 cell"></td>
+          <td class="cel-2"></td>
+        </tr>
+        <tr id="row-2">
+          <td class="cel-0 cell"></td>
+          <td class="cel-1 cell"></td>
+          <td class="cel-2 cell"></td>
+        </tr>
+      </table>
+      <span style="float: right;">Desarrollado por <a href="https://twitter.com/@edutrul">@edutrul</a></span>
+    </div>
+</body>
+</html>
